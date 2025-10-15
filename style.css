@@ -1,0 +1,128 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling - dark background */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f172a; /* deep navy blue */
+  color: #e2e8f0; /* light text color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Heading */
+h1 {
+  color: #60a5fa; /* bright blue */
+  text-shadow: 0 0 8px rgba(96, 165, 250, 0.5);
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+/* Container Box */
+.container {
+  background-color: #1e293b; /* dark gray-blue box */
+  width: 90%;
+  max-width: 480px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Input Field */
+input[type="text"] {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  background-color: #0f172a;
+  color: #e2e8f0;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 6px rgba(96, 165, 250, 0.4);
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+/* Add Todo Button */
+button:first-of-type {
+  background-color: #2563eb;
+  color: white;
+}
+
+button:first-of-type:hover {
+  background-color: #1e40af;
+}
+
+/* Delete All Button */
+button:last-of-type {
+  background-color: #ef4444;
+  color: white;
+}
+
+button:last-of-type:hover {
+  background-color: #b91c1c;
+}
+
+/* Todo List */
+ul {
+  list-style-type: none;
+  margin-top: 20px;
+  text-align: left;
+  padding: 0;
+}
+
+/* Each Todo Item */
+ul li {
+  background-color: #334155;
+  border: 1px solid #475569;
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for items */
+ul li:hover {
+  background-color: #3b465c;
+}
+
+/* Todo Text */
+ul li span {
+  font-size: 15px;
+}
+
+/* Buttons inside each todo item */
+ul li button {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  margin-left: 6px;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+}

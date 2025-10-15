@@ -46,11 +46,21 @@ function addTodo() {
 function deleteAll() {
   var list = document.getElementById("list");
 
+
   list.innerHTML = "";
 }
 
 function deleteSingleItem(btn) {
-  btn.parentNode.remove();
+
+  var single_del_pop = confirm("Sure you want to delete?");
+
+  if (single_del_pop) {
+    btn.parentNode.remove();
+
+  }else{
+    return;
+  }
+
 }
 
 function editSingleItem(btn) {
