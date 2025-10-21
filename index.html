@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Todo Application</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <!-- 1 Input for user input 
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo Application</title>
+
+  <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-auth.js"></script> -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- 1 Input for user input 
         Add todo button for adding todo in list
         delete All to delete all todos
         unordered list  
     -->
-    <h1 style="text-align: center">Todo Application</h1>
+  <h1 style="text-align: center">Todo Application</h1>
+  <hr />
+  <div class="container" style="text-align: center">
+    <input placeholder="Enter Todo..." id="todoInput" type="text" />
+    <button class="edit-btn" onclick="addTodo()">Add Todo</button>
+    <button class="delete-btn" onclick="deleteAll()">Delete All</button>
     <hr />
-    <div class="container" style="text-align: center">
-      <input placeholder="Enter Todo..." id="todoInput" type="text" />
-      <button class="edit-btn" onclick="addTodo()">Add Todo</button>
-      <button class="delete-btn" onclick="deleteAll()">Delete All</button>
-      <hr />
-      <br /><br />
+    <br /><br />
 
-      <ul id="list">
-        
-      </ul>
+    <ul id="list">
 
-    </div>
+    </ul>
 
-    <script src="app.js"></script>
-  </body>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
 </html>
