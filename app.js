@@ -121,7 +121,7 @@ function getDataFromDatabase() {
       todoList.appendChild(liElement);
     }); // ✅ Closing bracket yahan hai
 }
-getDataFromDatabase();
+// getDataFromDatabase();
 
 
 
